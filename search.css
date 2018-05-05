@@ -1,0 +1,12 @@
+
+			fieldset{width:320;margin:auto;border-radius:30px;border-color:white}
+		
+			body{background:url(metr.jpg)}
+			table{font-size:20;color:white;font:bold;font-family:Courier New }
+			th{font-size:50;color:white;font:bold;font-family:Courier New }
+			a{color:yellow}
+			td{height:40}
+			input{height:25;border-radius: 	5px}
+			textarea{border-radius:5px}
+			.btn{color:#ffffff;background:red;font-size:15; padding:1px10px 10px;border-radius:30px;}
+		

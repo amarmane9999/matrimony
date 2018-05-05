@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Product Details</title>
+		<script>
+		valid=Math.floor(Math.random()*10021);
+			captcha=function()
+			{
+				cap=document.getElementById("capt").value;
+				
+				if(valid!=cap)
+				{
+					document.getElementById("capt").focus();
+					document.getElementById("captp").innerHTML="<font color=red>Incorrect Captcha";
+					return false;
+				}
+			}
+		</script>
+	
+	
+	</head>
+	<body><fielset>
+		<div style="width:20%;background:black;color:white"><h1>$ Product Details :</h1></div>
+		<h2>Enter Product Details in following form :</h2>
+		<div border="red"style="width:15%;background:cyan"><h3>Product Details Form :</h3></div>
+		<form method="get" action="getdata.php" onsubmit="return captcha()">
+			<table >
+				<tr><td>Product Id :</td><td><input type="number" id="pid" autofocus required name="pid"></td></tr>
+				<tr><td>Product Name :</td><td><input type="text" id="pname" required name="pname"></td></tr>
+				<tr><td>Description :</td><td><textarea id="des" rows="3" required cols="22" name="des"></textarea></td></tr>
+				<tr><td>Quantity :</td><td><input type="number" id="qty" min="5" max="10" placeholder="5" required name="qty"></td></tr>
+				<tr><td>Price :</td><td><input type="number" id="pric" name="pric" required></td></tr>
+				<tr><td>Captcha :</td><th><span id="captpt"></span></input></th></tr>
+				<script>
+				document.getElementById("captpt").innerHTML=valid;
+				</script>
+				<tr><td>Enter Captch :</td><td><input required type="text" id="capt" name="capt"></td><td><span id="captp"></span></td></tr>
+				<tr><td><input type="Reset" id="reset" name="reset"></td><td><input type="submit" id="subm" name="subm"></td></tr>
+			</table>
+		</form>
+	</body>
+</html>

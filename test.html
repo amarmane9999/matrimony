@@ -1,0 +1,39 @@
+<html>
+
+	<head>
+	<style>
+	
+		#p{color:yellow}
+	
+	
+	</style>
+		<script>
+			fun=function()
+			{
+				name=document.getElementById('text').value;
+				if(name.length>5)
+				{
+				
+					document.getElementById('p').innerHTML="<b>Max length is 5";
+				}
+			}
+		
+		
+		</script>
+	
+	
+	
+	</head>
+	<body>
+		<input type="text" id="text" onchange="fun()">
+		<p id="p"></p>
+		
+	
+	
+	
+	
+	</body>
+
+
+
+</html>

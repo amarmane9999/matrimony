@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Matrimony.com</title>
+		<style>
+			fieldset{width:350;margin:auto;border-radius:30px;border-color:white}
+			legend{font-size:20}
+			body{background:url(metr.jpg)}
+			table{color:white;}
+			a{color:yellow}
+			td{height:40}
+			input{height:25;border-radius: 	5px}
+			textarea{border-radius:5px}
+			.btn{color:#ffffff;background:red;font-size:15; padding: 3px 20px 20px 25px;border-radius:30px;}
+		</style>
+	<script src="register.js"></script>
+	</head>
+	<body style="font-family:Courier New" >
+	<h1 align="center"><font color="Yellow">Matrimony.com</h1><br>
+		<form method="post" action="metromony.php" onsubmit="return valid()">
+		<fieldset class="field">
+			<table cellpadding="5">
+			<legend align="left">Register</legend>
+				<tr><td>UserName<font color="red">*</font> :</td><td><input type="text" required autofocus id="uname" maxlength="15" name="uname" placeholder="Enter User Name"onchange="authuname()"></input></td><td><span id="s1"></td></tr>
+				<tr><td>Password<font color="red">*</font> :</td><td><input type="password" id="pass" name="pass" required placeholder="abc@1xyz"></input></td><td><span id="s2"></td></tr>
+				<tr><td>Email<font color="red">*</font> :</td><td><input type="email" id="email" required name="email" required placeholder="example@abc.com"></input></td></tr>
+				<tr><td>Gender<font color="red">*</font> :</td><td><input type="radio" name="gender" value="Male">Male&nbsp;&nbsp;<input type="radio" name="gender" value="Femaleale" required>Female</td></tr>
+				<tr><td>Age<font color="red">*</font> :</td><td><input type="number" id="age" min="18" max="60" name="age" required placeholder="18"></input></td></tr>
+				<tr><td>Address :</td><td><textarea id="addr" required name="addr" cols="21" rows="4"></textarea></td></tr>
+				<tr><td>Contact No.<font color="red">*</font>:</td><td><input type="number" id="cont" name="cont" min="7000000000"></td></tr>
+				<tr><th><input type="Reset" class="btn"></th></td><th><input type="submit" name="sub" value="Sign Up" class="btn"></input></th></tr>
+				<tr><td colspan="2"><a href="metromony.html">Existing User Click Here</a></td></tr>
+			</table>
+			</fieldset>
+		</form>
+
+	</body>
+</html>
